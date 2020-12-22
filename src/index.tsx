@@ -5,6 +5,9 @@ import App from './App';
 import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { getStateAsync } from './features/tictactoe/tictactoe';
+
+store.dispatch(getStateAsync());
 
 ReactDOM.render(
   <React.StrictMode>
